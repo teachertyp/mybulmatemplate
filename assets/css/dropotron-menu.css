@@ -1,0 +1,210 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1 трав. 2019, 14:03:13
+    Author     : typ
+*/
+#mainmenu ul { list-style: none; margin: 0; padding: 0; }
+#mainmenu ul li { display: inline-block; margin: 0 0.2em 0 0.2em; padding: 0.15em 0.35em 0.15em 0.35em;  }
+#mainmenu ul li.active { color: #22509a; }
+#mainmenu ul li.active a { color: #22509a; text-decoration: none; }
+.dropotron {  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);background: #fff; border:1px solid rgba(0,0,0,.075); border-top: 2px solid #3273dc; list-style: none; margin: 0; min-width: 10em; padding: 0px; }
+.dropotron > li {  margin: 0; padding: 0; }
+.dropotron > li:first-child { border-top: 0; }
+.dropotron > li > a { color: #3273dc; display: block; padding: 0.5em; text-decoration: none; }
+.dropotron > li.active > a, .dropotron > li:hover > a { color: #3273dc; background-color: #f9f9f9; }
+.dropotron.level-0 { margin-top: 0.75em; }
+/*.dropotron.level-0:before { content: ''; position: absolute; border-bottom: solid 0.5em #444; border-left: solid 0.5em transparent; border-right: solid 0.5em transparent; top: -0.5em; }*/
+
+
+.submenu{
+    display: none;
+}
+.modal{
+    opacity: 0;
+    display: flex;
+
+    width: -webkit-fill-available;
+    left: -2000px;
+    transition: left 1s ease,opacity 1s ease;
+}
+.modal-background{
+    background-color: rgba(255, 255, 255, 0);
+}
+.modal.is-active {
+    z-index: 910;
+    left:0px;
+    opacity: 1;
+}
+.modal-close{
+    position: absolute;
+    left: 250px;
+    top: 0px;
+    border-radius: 0px;
+    background-color: #3273dc;
+}
+
+
+#momenu .modal-content{
+    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    overflow: auto;
+    margin: 0px;
+    display: initial;
+    max-height: inherit;
+    overflow: auto;
+    height: 100vh;
+    background-color: #fff;
+        
+}
+
+.modal-content > ul >li{
+    white-space: nowrap;
+    padding: 0px;
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f0;
+}
+.modal-content > ul > li > a {
+    padding: 10px;
+    display: block;
+    font-size: 1rem;
+}
+
+#momemu .opener ul {
+    padding-left: 0px;
+    border-left: 2px solid;
+    margin-right: -10px
+}
+
+#momenu .opener ul li {
+    
+    white-space: nowrap;
+    padding-left: 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#momenu .opener > a{
+    position: relative;
+}
+
+#momenu .opener > a:after{
+    font-family: 'FontAwesome';
+    content: '\f054';
+    position: absolute;
+    color: #3273dc;
+    font-size: x-small;
+    margin: 7px;
+    left: 90%;
+}
+
+
+
+.opener ul li:active{
+    border-left: 2px solid;
+
+}
+
+
+.opener ul li a {
+    padding:0.5rem 0.5rem;
+}
+
+@media (min-width:1200px) {
+
+    #momenu{
+        display: none;
+    }
+}
+
+@media (min-width:992px) {
+    #mainmenu{
+        display: flex;
+    }
+    #momenu{
+        display: none;
+    }
+
+} 
+
+@media (max-width:991.98px) {
+    #mainmenu{
+        display: none;
+    }
+
+
+
+    .side-nav{
+        display: block;
+    }
+
+
+}
+
+@media (max-width:768px) {
+
+    #mainmenu{
+        display: none;
+    } 
+    #search{
+        max-width: 200px;
+    }
+
+
+
+}
+
+@media (max-width:576px) {
+    
+    #mmenu{
+        /*        padding: 0px 20px;*/
+    }
+
+
+    .side-nav{
+        display: block;
+    }
+
+    #mainmenu{
+        display: none;
+    }
+
+    #search {
+        max-width: 200px;
+        padding-right: 0.6rem;
+    }
+}
+
+
+@media (max-width:400px) {
+    
+    .side-nav{
+        display: block;
+        margin-right: 10px;
+    }
+
+    
+    #mainmenu{
+        display: none;
+    }
+
+	.plyr--audio .plyr__controls{
+		padding: 0px;
+	}
+
+
+    #search {
+        max-width: 35px;
+        padding-right: 0.6rem;
+    }
+    
+    .plyr__controls__item plyr__time--current plyr__time{
+        display: none;
+    }
+}

@@ -1,0 +1,436 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1 трав. 2019, 11:29:19
+    Author     : typ
+*/
+
+body{
+    font-size: .965rem;
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    text-rendering: geometricPrecision;
+    font-smooth: always;
+    font-weight: 300;
+    font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.is-tall {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.is-tall-container {
+  flex: 1;
+  background-color: #fafafa;
+}
+
+.h1,.h2,.h3,.h4,h1,h2,h3,h4{
+    padding-bottom: 0.2em;
+    font-weight: 600;
+}
+
+.h1, h1{
+    font-size: 2rem;
+}
+
+.h2, h2{
+    font-size: 1.75rem;
+}
+
+.h3, h3{
+    font-size: 1.5rem;
+}
+
+.center{
+    text-align: center;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.section.signin, .section.nobg{
+    background-color: #fafafa;
+    margin-top: 1.5rem;
+}
+
+.section {
+    padding: 1em 1em;
+    background-color: #fff;
+}
+
+.grid-blog{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+
+
+.topper{
+    border-bottom: 1px solid #f9f9f9;
+    display: flex;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.topper a{
+    margin-right: 10px;
+}
+
+.topper a:last-child{
+    margin-right: 0px;
+}
+
+.topper div:last-child{
+    text-align: right;
+}
+
+.sectionmmenu{
+        width: 100%;
+    max-width: inherit;
+}
+
+#mmenu{
+    display: flex;
+    padding: 1em;
+    margin-bottom: inherit;
+    height: 55px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+    transition: opacity 2s;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.left-menu ,.right-menu{
+    display: flex;
+}
+.left-menu{
+    justify-content: flex-start;
+}
+
+.right-menu{
+    justify-content: flex-end;
+}
+
+.blog-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a.round {
+    margin: 0.5em;
+    border-radius: 36px;
+    width: 36px;
+}
+
+a.round .fas{
+    margin-right: auto;
+}
+
+
+.list-blog .box {
+    border-radius:0;
+}
+
+.list-blog figure {
+    background-position: center;
+    background-image: url(http://visma.ua/vismaimages/radiokd.jpg);
+    background-size: cover;
+}
+
+
+
+.level-item {
+    margin-right: 30px;
+}
+
+#mmenu.ontop{
+    position: fixed;
+    top: 0px;
+    z-index: 900;
+    background-color: #fff;
+    width: inherit;
+    max-width: inherit;
+
+}
+
+
+#mmenu .opener:after{
+    font-family: 'FontAwesome';
+    content: '\f078';
+    position: relative;
+    top: -0.2em;
+    color: #3273dc;
+    font-size: x-small;
+}
+#logo {
+    display: flex;
+    min-width: 135px;
+    justify-content: left;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding-left: 0px;
+}
+#mainmenu{
+    display: flex;
+    align-items: center;
+}
+
+#mainmenu a {
+    padding: 10px 0px 15px 0px;
+    
+}
+#mainmenu a:hover{
+    border-bottom: 2px solid #3273dc;
+}
+
+#usermenu {
+    left: -110px;
+}
+
+.dropdown-menu{
+    min-width: 100px;
+}
+.dropdown-content{
+    width: 200px;
+    /* min-width: 100px; */
+    border-radius: 0px;
+}
+
+#search{
+
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+}
+#search p{
+    width: 100%;
+}
+
+#cart{
+    display: flex;
+    align-items: center;
+}
+
+.side-nav{
+
+}
+
+
+.far{
+    margin-right: 5px;
+}
+
+
+.fas{
+    margin-right: 5px;
+}
+
+
+.side-nav{
+    display: none;
+    margin-right: 20px;
+}
+
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+ 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+#vismaradio{
+    display: none;
+}
+
+.mr-top-20{
+    margin-top: 20px;
+}
+
+
+.card-h4{
+    padding: 0.35em;
+}
+
+.pad-1-e{
+    padding: 1em;
+}
+
+
+.blog-section{
+    padding: 0;
+    
+}
+.blog-list-h{
+    color:#606975;
+}
+.post-info{
+    font-size: smaller;
+}
+.post-date:before{
+    font-family: 'Font Awesome 5 Free';
+    content: '\f017';
+    padding-right: 5px;
+}
+
+.post-author:before{
+    font-family: 'Font Awesome 5 Free';
+    content: '\f007';
+    padding-right: 5px;
+}
+
+.post-date, .post-author,.socialbtn{
+    padding-right: 10px;
+}
+
+.blog-post .content{
+    text-align: justify;
+}
+
+.blog-post .box{
+    border-radius: 0px;
+}
+
+
+
+@media (min-width:1200px) {
+    body{
+       padding: 0rem 5rem;
+       background-color: #f8f8f8;
+    }
+
+}
+
+
+
+
+@media (min-width:768px) {
+
+    #mainmenu{
+        display: none;
+    } 
+
+} 
+
+@media (min-width:992px) {
+
+
+} 
+
+
+
+@media (max-width:1200px) {
+
+}
+
+@media (max-width:991.98px) {
+
+
+
+}
+
+@media (max-width:768px) {
+
+.list-blog .media {
+    flex-direction: column;
+}
+
+.media-left{
+    width: 100%;
+}
+
+.media-left .image {
+    width: 100%;
+    margin-bottom: 0.75em;
+}
+}
+
+
+
+
+@media (max-width:576px) {
+    
+
+    
+    .nomobile {
+        display: none;
+    }
+
+
+    .topper a:first-child{
+        margin-right: 0px;
+    }
+
+    
+.grid-blog{
+    grid-template-columns: 1fr;
+}
+
+
+}
+
+@media (max-width:400px) {
+    
+    .h2, h2{
+       font-size: 1.2rem;
+
+    }
+    
+    .h3, h3{
+       font-size: 1rem;
+    }
+    
+    .nomobile {
+        display: none;
+    }
+
+
+
+    .topper div:first-child{
+        margin-right: 0px;
+    }
+
+.grid-blog{
+    grid-template-columns: 1fr;
+}
+
+
+    
+}
+
+@media (min-width:576px) {
+
+}
+
+@media (min-width:768px) {
+
+
+
+}
+
+
+
+
+
