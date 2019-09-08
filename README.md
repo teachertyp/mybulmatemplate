@@ -1,3 +1,6 @@
-# bulmatemplate
+# BULMA Template
 My first Bulma HTML Website Templates
-## Author Yurii Tereshchenko
+## Author 
+Yurii Tereshchenko
+##demo
+[links](https://teachertyp.github.io/)
