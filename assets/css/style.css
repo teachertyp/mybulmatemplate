@@ -11,6 +11,7 @@ and open the template in the editor.
 body{
     font-size: .965rem;
     font-family: 'Open Sans', sans-serif;
+    background-color: #f8f8f8;
     text-rendering: optimizeLegibility;
     text-rendering: geometricPrecision;
     font-smooth: always;

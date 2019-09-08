@@ -1,3 +1,3 @@
 # bulmatemplate
-My test Bulma HTML Website Templates
+My first Bulma HTML Website Templates
 ## Author Yurii Tereshchenko
