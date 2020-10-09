@@ -1,0 +1,262 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 09.10.2017, 22:21:05
+    Author     : typ
+*/
+.nopadding{
+        padding: 0;
+}
+.delquestions{
+    display:none;
+}
+
+#fstartbtn{
+    text-align: center;
+    padding: 20px;
+}
+/*  тестові форми */
+.qvariants{
+    padding: 20px;
+    border: 1px dotted#607D8B;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pretty{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* відповідність */
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+
+ol.spivp li.placeholder {
+  position: relative;
+  /** More li styles **/
+}
+ol.spivp li.placeholder:before {
+  position: absolute;
+  /** Define arrowhead **/
+}
+
+.span4{
+        float: left;
+    width: 400px;
+}
+
+ol.nested_with_switch li, ol.simple_with_animation li, ol.serialization li, ol.default li {
+    cursor: pointer;
+}
+ol.vertical li {
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    color: #0088cc;
+    background: #eeeeee;
+}
+
+.jumbotron{
+    padding: 10px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+.quizz-catname{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.quizz-cat-button{
+    display: flex;
+}
+.quizz-cat-button li {
+    padding-right: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/*PRETTY MODYFI*/
+.pretty.p-icon input:checked~.state label:before{
+    position: absolute;
+    top:0px;
+}
+
+.pretty input:checked~.state.p-success label:after, .pretty.p-toggle .state.p-success label:after{
+      position: absolute;
+    top:0px;  
+}
+
+.pretty input:checked~.state.p-primary .icon, .pretty input:checked~.state.p-primary .svg, .pretty.p-toggle .state.p-primary .icon, .pretty.p-toggle .state.p-primary .svg{
+         position: absolute;
+    top:0px;  
+}
+
+.pretty.p-round.p-icon .state .icon:before{
+            position: absolute;
+    top:0px; 
+}
+
+.pretty.p-icon input:checked~.state .icon {
+              position: absolute;
+    top:0px;   
+}
+
+.pretty.p-round.p-icon .state .icon{
+    position: absolute;
+    top:0px;   
+}
+
+.pretty.p-round .state label:after, .pretty.p-round .state label:before{
+    position: absolute;
+    top:0px;     
+}
+
+.imageansw{
+    width: 150px;
+}
+
+.suc{
+   cursor: pointer; 
+}
+.uscode{
+    display:none;
+    float: left;
+    padding-left: 10px;
+    
+}
+
+#classforusers{
+    float: left;
+    width: 100px;
+}
+
+.editclass .button {
+    font-size:0.65em;
+}
+
+.abtnmenu{
+    margin-top: 10px;
+        right: 0;
+    position: absolute;
+    font-size: smaller;
+    visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.abtnmenu a {
+    color: #444444;
+}
+.quizzitem{
+       margin: 10px;
+    border: 1px solid #f9f9ff;
+    padding: 0px 10px;
+    border-left: 2px solid;
+    
+}
+
+.quizz-catname:hover .abtnmenu {
+    visibility: visible;
+    opacity: 1;
+}
+.quizzitem h3{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#qlist{
+    height: 400px;
+    overflow-y: auto;
+}
+.qtitle {
+    background-color: #f7f7f7;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    color: #0703e8;
+}
+
+.nextprevdiv{
+        padding-top: 20px;
+    text-align: center;
+}
+
+#passw {
+    margin-bottom: 10px;
+}
+
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9; 
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+
+.answtext ,.ifr{
+    display: inline-block;
+}
+
+.rightclas {
+    background-color: #b3ffc575;
+}
+.wrongclas {
+    background-color: #ffccba75;
+}
+.qitem{
+    margin: 5px 0px 5px 0px;
+    border-bottom: 1px solid #efefef;
+    padding: 5px;
+
+}
