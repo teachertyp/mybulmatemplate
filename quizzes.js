@@ -14,7 +14,7 @@ $(function () {
     $(document).off("click").on("click","#startbtnnew", function () {
         var t=$("#selt").val();
         if(t>0||typeof t=="undefined"){
-           ajax2.post("/quizz/quizzquizz.html", {"id": quizzid, "qnum": "0","teacher":t});
+           ajax2.post("https://typatest.pp.ua/quizz/quizzquizz.html", {"id": quizzid, "qnum": "0","teacher":t});
         }else{
             alert("Виберіть учителя");
         }
@@ -37,7 +37,7 @@ $(function () {
 
     $(document).on("click", "#setpassw", function () {
         var passw = $("#passw").val();
-        ajax2.post("/quizz/quizzquizz.html", {"id": quizzid, "quizzpassw": passw});
+        ajax2.post("https://typatest.pp.ua/quizz/quizzquizz.html", {"id": quizzid, "quizzpassw": passw});
     });
 
 
@@ -236,14 +236,14 @@ $(function () {
             var selid = radioansw.split("-");
             var rid = selid[2];
             var qid = selid[1];
-            ajax2.post("/quizz/quizzquizz.html", {"id": quizzid, "qid": qid, "qnum": n, "r": rid, "type": 1});
+            ajax2.post("https://typatest.pp.ua/quizz/quizzquizz.html", {"id": quizzid, "qid": qid, "qnum": n, "r": rid, "type": 1});
         },
         sendchb: function () {
-            ajax2.post("/quizz/quizzquizz.html", {"id": quizzid, "qid": question_id, "qnum": n, "r": checkboxes, "type": 2});
+            ajax2.post("https://typatest.pp.ua/quizz/quizzquizz.html", {"id": quizzid, "qid": question_id, "qnum": n, "r": checkboxes, "type": 2});
 
         },
         sendshb: function () {
-            ajax2.post("/quizz/quizzquizz.html", {"id": quizzid, "qid": question_id, "qnum": n, "r": shba, "type": 3});
+            ajax2.post("https://typatest.pp.ua/quizz/quizzquizz.html", {"id": quizzid, "qid": question_id, "qnum": n, "r": shba, "type": 3});
         },
         sendspi: function () {
             var hspileft=document.getElementById("spileft");
@@ -257,7 +257,7 @@ $(function () {
                 aspir[i] = spiright[i].innerText;
 
             }
-            ajax2.post("/quizz/quizzquizz.html", {"id": quizzid, "qid": question_id, "qnum": n, "r": 1, "aspil": aspil, "aspir": aspir, "type": 4});
+            ajax2.post("https://typatest.pp.ua/quizz/quizzquizz.html", {"id": quizzid, "qid": question_id, "qnum": n, "r": 1, "aspil": aspil, "aspir": aspir, "type": 4});
         }
         
 
