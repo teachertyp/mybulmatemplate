@@ -267,7 +267,12 @@ $(function () {
 
     var ajax2 = {
         post: function (url, data) {
-
+            $.ajaxSetup({
+    crossDomain: true,
+    xhrFields: {
+        withCredentials: true
+    }
+});
             $.post(url, data, function (answer) {
   
                 try {
